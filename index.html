@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"></meta>
+  <meta name="viewport" content="width=device-width"></meta>
+  <link rel="stylesheet" href="style.css"></link>
+  
+</head>
+<body>
+  <label id="xlabel"></label><br>
+  <button type="button" id="GenerateButton">Generate</button>
+  <script>
+  document.getElementById("GenerateButton").onclick = function(){
+    var x = Math.floor(Math.random() * 10000000) + 1;
+	console.log(x);
+    document.getElementById("xlabel").innerHTML = x;
+  }
+  document.getElementById("GenerateButton").onclick(); // runs code to generate random number when page is loaded
+  </script>
+</body>
+</html>
